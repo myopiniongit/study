@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //배열 + 반복문
+    function get_members() {
+        return ['egoing', 'k8805', 'sorialgi', 'leetzhee']
+    }   
+
+        // members 를 function으로 정의
+    members = get_members();
+
+        //.push = 단수의 배열추가 .concat = 복수의 배열 추가 .unshift = 첫배열에 추가
+    members.push('imilim9');
+    members.unshift('ID list');
+    var ids = ['gkskanj', 'samdol1','myopinion'];
+    members = members.concat(ids);
+    members.push('a','b','c')
+
+        //splice (a, b, c) / a = 몇번쨰 index? b = a부터 몇개를 지울것인가. c = 입력
+    members.splice(5, 0, 'my ids')
+
+        //i는 .length로 인해 members 내의 index 숫자만큼만
+    for(var i= 0; i < members.length; i++){
+        document.write(members[i].toUpperCase()+"<br />");
+    }
+    </script>
+    <script>
+    //li= ['a', 'b', 'c', 'd', 'e']
+    //li.shift = 맨 첫번째 항 삭제
+    //li.pop = 맨 뒤에꺼 삭제
+
+    //li= ['a', 'b', 'c', 'd', 'e']
+    //li.sort() = 알파벳 순 정렬
+    //li.reverse() = 알파벳 역순 정렬
+
+    //function sortfunc() 를 정의 후
+    //li.sort(sortfunc) 란 식으로 sort 가능
+    </script>
+    
+    
+</body>
+</html>

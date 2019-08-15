@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<ol>
+<script>
+// JS' array means 'associative array' or 'map' or 'dictionary' at other language
+// each variable means 'key' and 'value'
+// 1. var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+/*2.
+var grades = {};
+grades['egoing'] = 10
+grades['k8805'] = 6
+grades['sorialgi'] = 80
+*/
+//3.
+var grades = new Object();
+grades['egoing'] = 10
+grades['k8805'] = 6
+grades['sorialgi'] = 80
+
+//document.write(grades['k8805']); // output = 80
+
+//grades['sorialgi'] = grades['sorial' + 'gi'] = grades.sorialgi
+
+//array + for statment(repeatitive statement)
+/* these one means array can show it has sequence but object is not.
+Object has just key and value
+var arr = ['a', 'b', 'c']
+for(var i = 0; i < arr.length; i++) {
+    document.write(arr[i]);
+}*/
+
+// it means when for statement activated each 'key and value' called for 'key' in grades
+// get something you want then use 'for in statement'
+/* for(key in grades){
+    console.log(key) => output is 'egoing','k8805', 'sorialgi'
+    console.log(grades[key])  => output is 8, 6, 80. 'value's are showing
+}
+*/
+
+for(var name in grades) {
+    document.write("<li>key : "+name+" value : "+grades[name]+"</li>")
+}
+//output => key: egoing value: 10 ......
+
+
+
+</script>
+</ol>
+</body>
+</html>

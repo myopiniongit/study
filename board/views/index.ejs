@@ -1,0 +1,472 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="title" content="공지사항 1 페이지 > SAMATIKA" />
+<meta name="publisher" content="SAMATIKA" />
+<meta name="author" content="SAMATIKA" />
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="SAMATIKA" />
+<meta name="description" content="공지사항 1 페이지 > SAMATIKA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:title" content="공지사항 1 페이지 > SAMATIKA" />
+<meta property="og:site_name" content="SAMATIKA" />
+<meta property="og:type" content="" />
+<meta property="og:description" content="공지사항 1 페이지 > SAMATIKA" />
+<meta property="og:url" content="http://www7.samatika.com/bbs/board.php?bo_table=notice" />
+<link rel="canonical" href="http://www7.samatika.com/bbs/board.php?bo_table=notice" />
+<title>공지사항 1 페이지 > SAMATIKA</title>
+<link rel="stylesheet" href="https://www7.samatika.com/css/default.css?ver=180820">
+<link rel="stylesheet" href="https://www7.samatika.com/css/apms.css?ver=180820">
+<link rel="stylesheet" href="https://www7.samatika.com/thema/Miso-LTE/assets/bs3/css/bootstrap.min.css" type="text/css"  class="thema-mode">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css">
+<link rel="stylesheet" href="https://www7.samatika.com/thema/Miso-LTE/colorset/Basic/colorset.css" type="text/css"  class="thema-colorset">
+<link rel="stylesheet" href="https://www7.samatika.com/skin/board/basic/style.css" >
+<link rel="stylesheet" href="https://www7.samatika.com/css/level/basic.css?ver=180820">
+<!--[if lte IE 8]>
+<script src="https://www7.samatika.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://www7.samatika.com";
+var g5_bbs_url   = "https://www7.samatika.com/bbs";
+var g5_is_member = "1";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "notice";
+var g5_sca       = "";
+var g5_pim       = "";
+var g5_editor    = "smarteditor2";
+var g5_responsive    = "1";
+var g5_cookie_domain = "samatika.com";
+var g5_purl = "http://www7.samatika.com/bbs/board.php?bo_table=notice";
+</script>
+<script src="https://www7.samatika.com/js/jquery-1.11.3.min.js"></script>
+<script src="https://www7.samatika.com/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://www7.samatika.com/lang/korean/lang.js?ver=180820"></script>
+<script src="https://www7.samatika.com/js/common.js?ver=180820"></script>
+<script src="https://www7.samatika.com/js/wrest.js?ver=180820"></script>
+<script src="https://www7.samatika.com/js/placeholders.min.js"></script>
+<script src="https://www7.samatika.com/js/apms.js?ver=180820"></script>
+<script src="https://kit.fontawesome.com/de3d6485eb.js"></script>
+<link rel="stylesheet" href="https://www7.samatika.com/js/font-awesome/css/font-awesome.min.css">
+<script src="https://www7.samatika.com/plugin/apms/js/jquery.mobile.swipe.min.js"></script>
+</head>
+<body class="responsive is-pc">
+<style> 
+		.layout-boxed > .wrapper, .content-wrapper > .content { max-width:1250px; }
+	.no-responsive .wrapper, .no-responsive .main-header { min-width:1250px; }
+	.layout-boxed.left .wrapper { margin-left:0px; }
+	.layout-boxed.right .wrapper { margin-right:0px; }
+	.at-navbar .dropdown-menu ul { width: 180px; min-width: 180px; }
+		</style>
+<div id="thema_wrapper" class="hold-transition ko layout-boxed skin-white-light sidebar-mini">
+	<!-- Site wrapper -->
+	<div class="wrapper">
+		<header class="main-header" style="background-color:white">
+			<!-- Logo -->
+			<a href="https://www7.samatika.com" class="logo">
+				<!-- mini logo for sidebar mini 50x50 pixels -->
+				<span class="logo-mini"><img src='/img/logo/logo_small.png' border=0></span>
+				<!-- logo for regular state and mobile devices -->
+				<span class="logo-lg"><img src='/img/logo/logo_main.png' border=0></span>
+			</a>
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<a class="cursor sidebar-toggle" data-toggle="offcanvas" role="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+								<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+												<li class="dropdown tasks-menu">
+
+							<ul class="dropdown-menu ko-12">
+								<li class="header">
+									<form name="tallsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
+									<div class="form-group" style="margin-bottom:8px;">
+										<input type="text" name="stx" class="form-control input-sm" value="" placeholder="두글자 이상 입력">
+									</div>
+									<div class="row row-10">
+										<div class="col-xs-6 col-10">
+											<select name="url" class="form-control input-sm">
+												<option value="https://www7.samatika.com/bbs/search.php">게시물</option>
+																								<option value="https://www7.samatika.com/bbs/tag.php">태그</option>
+											</select>
+										</div>
+										<div class="col-xs-6 col-10">
+											<button type="submit" class="btn btn-navy btn-sm btn-block"><i class="fa fa-search"></i> 검색하기</button>
+										</div>
+									</div>
+									</form>				
+								</li>
+							</ul>
+						</li>
+						<li data-toggle="control-sidebar" onclick="miso_msg();">
+							<a class="cursor" data-href="#" data-toggle="dropdown" style="padding:0px;">
+								<div data-original-title="<nobr>알림</nobr>" data-toggle="tooltip" data-placement="bottom" data-html="true" style="padding:15px;">
+									<i class="fa fa-bell"></i>
+									<span class="label label-circle label-warning msgLabel en" style="display:none;">
+										<span class="msgCount">0</span>
+									</span>
+								</div>
+							</a>
+						</li>
+
+
+												<li class="hidden-xs">
+							<a href="https://www7.samatika.com/bbs/board.php?bo_table=notice&amp;device=mobile" target="_blank" data-original-title="<nobr>모바일</nobr>" data-toggle="tooltip" data-placement="bottom" data-html="true">
+								<i class="fa fa-exchange"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+							</nav>
+		</header>
+
+		<!-- =============================================== -->
+
+		<!-- Left side column. contains the sidebar -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<div class="sidebar-misc">
+
+	<!-- Sidebar User Panel -->
+			<div class="user-panel">
+
+			<li>
+				<a href="javascript::;" onclick="win_memo('/bbs/memo.php');">
+										쪽지 <b><font color=black><span style='font-size:12pt;'>0</span></font></b>개
+									</a>
+					<span class="pull-right">
+											<a href="javascript::;" onclick="win_memo('/bbs/response.php');">댓글알림 <b><font color=black><span style='font-size:12pt;'>0</span></font></b>개</a>
+										</span>
+
+			</li>
+						<!--
+			<li >
+				<a class="cursor" data-toggle="control-sidebar" onclick="miso_msg();">
+					<span class="pull-right">
+						<b class="orangered msgCount">0</b> 개
+					</span>
+					알림
+				</a>
+			</li>
+			-->
+						</ul>
+
+		</div>
+
+		<!--
+	<div class="sidebar-header en">
+		ICON NAVIGATION
+	</div>
+	-->
+	<div class="sidebar-icon text-center">
+
+	<div class="clearfix"></div>
+	</div>
+
+</div>
+
+<!-- =============================================== -->
+
+<!-- Sidebar Menu -->
+						<div class="user-panel">
+				<div class="sidebar-form btn-group btn-group-justified" style="margin:10px 0px 0px">
+						<a href="/bbs/board.php?bo_table=notice" class="btn btn-flat btn-lg" style="height:auto;">
+							<i class="fas fa-comments"></i> 게시판 1
+						</a>
+				</div>
+				<div class="sidebar-form btn-group btn-group-justified" style="margin:10px 0px 0px">
+						<a href="/bbs/board.php?bo_table=cafetip" class="btn btn-flat btn-lg" style="height:auto;">
+							<i class="far fa-edit"></i> 게시판 2
+						</a>
+				</div>
+				<div class="sidebar-form btn-group btn-group-justified" style="margin:10px 0px 0px">
+						<a href="/bbs/board.php?bo_table=qa" class="btn btn-flat btn-lg" style="height:auto;">
+							<i class="fas fa-camera"></i> 게시판 3
+						</a>
+				</div>
+				<div class="sidebar-form btn-group btn-group-justified" style="margin:10px 0px 0px">
+						<a href="/bbs/board.php?bo_table=sgametalk" class="btn btn-flat btn-lg" style="height:auto;">
+							<i class="fas fa-chart-bar"></i> 게시판4
+						</a>
+				</div>
+				
+							</div>
+
+
+<!-- =============================================== -->
+			</section>
+		</aside>
+		<!-- =============================================== -->
+
+		<!-- Content Wrapper. Contains page content -->
+		<div id="content_wrapper" class="content-wrapper left content-white ko-12">
+			
+							<div class="content">
+					<div class="at-content">
+								
+<section class="board-list"> 
+					<div class="list-btn-box">
+						<div class="form-group pull-right list-btn">
+							<div class="btn-group dropup"><a href="./write.php?bo_table=notice" class="btn btn-color btn-sm"><i class="fa fa-pencil"></i><span>글쓰기</span></a>
+							</div>
+						</div>
+					<!--<div class="clearfix"></div>-->
+			</div>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="list-wrap">
+		<form name="fboardlist" id="fboardlist" action="./board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post" role="form" class="form">
+			<input type="hidden" name="bo_table" value="notice">
+			<input type="hidden" name="sfl" value="">
+			<input type="hidden" name="stx" value="">
+			<input type="hidden" name="spt" value="">
+			<input type="hidden" name="sca" value="">
+			<input type="hidden" name="sst" value="wr_num, wr_reply">
+			<input type="hidden" name="sod" value="">
+			<input type="hidden" name="page" value="1">
+			<input type="hidden" name="sw" value="">
+			
+<div class="table-responsive">
+	<table class="table div-table list-pc bg-white">
+	<thead>
+	<tr>
+				<th scope="col">번호</th>
+		
+																		<th scope="col">제목</th>
+										<th scope="col">글쓴이</th>
+									<th scope="col">날짜</th>
+											<th scope="col"><nobr>추천</nobr></th>
+			</tr>
+	</thead>
+	<tbody>
+        <tr class="active">
+            <td class="text-center font-11">
+                <span class="wr-icon wr-notice"></span> </td>
+            <td class="list-subject notice">
+                <a href="https://www7.samatika.com/bbs/board.php?bo_table=notice&amp;wr_id=1145">
+                     머리가 빠져버리겠네. <span class="sound_only">댓글</span><span
+                        class="count orangered">+<span class="cnt_cmt">0</span></span><span class="sound_only">개</span>
+                </a>
+            </td>
+        
+        
+            <td><b><a href="javascript:;"
+                        onClick="showSideView(this, 'samatika', 'samatika', 'qZOjktmbm86ScJmjl8ygYMakoA--', '');"><span
+                            class="member">Test</span></a></b></td>
+        
+            <td class="text-center en font-11">08.11</td>
+            <td class="text-center en font-11">0</td>
+        
+        </tr>
+        
+        <tr>
+            <td class="text-center font-11">
+                <span class="en">2</span> </td>
+            <td class="list-subject">
+                <a href="https://www7.samatika.com/bbs/board.php?bo_table=notice&amp;wr_id=5">
+                     아 어렵다 미쳐버리겠따. <span class="sound_only">댓글</span><span
+                        class="count orangered">+<span class="cnt_cmt">0</span></span><span class="sound_only">개</span>
+                </a>
+            </td>
+        
+        
+            <td><b><a href="javascript:;"
+                        onClick="showSideView(this, 'samatika', 'samatika', 'qZOjktmbm86ScJmjl8ygYMakoA--', '');"><span
+                            class="member">Test</span></a></b></td>
+        
+            <td class="text-center en font-11">08.11</td>
+            <td class="text-center en font-11">0</td>
+        
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <div class="list-btn-box">
+            <div class="form-group pull-right list-btn">
+                <div class="btn-group dropup">
+                    <a href="./write.php?bo_table=notice" class="btn btn-color btn-sm"><i
+                            class="fa fa-pencil"></i><span>글쓰기</span></a> </div>
+            </div>
+            <div class="form-group list-btn font-12">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-black btn-sm" data-toggle="modal" data-target="#searchModal"
+                        onclick="return false;"><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        </form>
+        
+        <div class="list-page text-center">
+            <ul class="pagination pagination-sm en">
+                <li class="disabled"><a><i class="fa fa-angle-double-left"></i></a></li>
+                <li class="disabled"><a><i class="fa fa-angle-left"></i></a></li>
+                <li class="active"><a>1</a></li>
+                <li class="disabled"><a><i class="fa fa-angle-right"></i></a></li>
+                <li class="disabled"><a><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="clearfix"></div>
+
+		
+		<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="text-center">
+							<h4 id="myModalLabel"><i class="fa fa-search fa-lg"></i> Search</h4>
+						</div>
+						<form name="fsearch" method="get" role="form" class="form" style="margin-top:20px;">
+							<input type="hidden" name="bo_table" value="notice">
+							<input type="hidden" name="sca" value="">
+							<input type="hidden" name="sop" value="and">
+							<div class="form-group">
+								<label for="sfl" class="sound_only">검색대상</label>
+								<select name="sfl" id="sfl" class="form-control input-sm">
+									<option value="wr_subject">제목</option>
+									<option value="wr_content">내용</option>
+									<option value="wr_subject||wr_content">제목+내용</option>
+									<option value="mb_id,1">회원아이디</option>
+									<option value="mb_id,0">회원아이디(코)</option>
+									<option value="wr_name,1">글쓴이</option>
+									<option value="wr_name,0">글쓴이(코)</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+								<input type="text" name="stx" value="" required id="stx" class="form-control input-sm" maxlength="20" placeholder="검색어">
+							</div>
+
+							<div class="btn-group btn-group-justified">
+								<div class="btn-group">
+									<button type="submit" class="btn btn-color"><i class="fa fa-check"></i></button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-black" data-dismiss="modal"><i class="fa fa-times"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- } 게시판 목록 끝 -->
+													</div><!-- .at-content -->
+			</div><!-- .content -->
+				</div><!-- /.content-wrapper -->
+
+		<!-- Footer -->
+		<footer id="thema_footer" class="main-footer ko-12">
+			<div class="info font-12 ko-11">
+
+				<span class="sp">|</span>
+				<!--<a href="https://www7.samatika.com/bbs/board.php?bo_table=notice&amp;device=mobile">
+					모바일 버전
+				</a>-->
+			</div>
+			<div class="copyright">
+				
+				<span class="hidden-xs en"><strong>Master: PeterKim  // e-mail: myopinion@Naver.com</strong> </span>
+            
+            </div>
+		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+			<div class="control-sidebar-content">
+				<div id="sidebarList"></div>
+				<div class="text-center">
+					<a href="javascript::;" data-toggle="control-sidebar">
+						<h3 class="control-sidebar-heading no-margin">
+							Close
+						</h3>
+					</a>
+				</div>
+			</div>
+		</aside><!-- /.control-sidebar -->
+
+		<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+		<div class="control-sidebar-bg"></div>
+	</div><!-- ./wrapper -->
+</div>
+
+<div id="go-btn" class="go-btn">
+   	<a href="#" class="go-top"><img src="https://www7.samatika.com/thema/Miso-LTE/assets/img/btn-top.png"></a>
+   	<a href="#" class="go-bottom"><img src="https://www7.samatika.com/thema/Miso-LTE/assets/img/btn-bottom.png"></a>
+</div>
+
+<!--[if lt IE 9]>
+<script src="https://www7.samatika.com/thema/Miso-LTE/assets/js/respond.js"></script>
+<![endif]-->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+	var is_miso_thema = "Miso-LTE";
+	var is_response_time = "0";
+	var is_hover_sidebar = "";
+</script>
+<script src="https://www7.samatika.com/thema/Miso-LTE/assets/bs3/js/bootstrap.min.js"></script>
+<script src="https://www7.samatika.com/thema/Miso-LTE/assets/js/slimscroll.min.js"></script>
+<script src="https://www7.samatika.com/thema/Miso-LTE/assets/js/fastclick.js"></script>
+<script src="https://www7.samatika.com/thema/Miso-LTE/assets/js/app.js"></script>
+<script src="https://www7.samatika.com/thema/Miso-LTE/assets/js/custom.js"></script>
+
+
+<!-- 아미나빌더 1.8.8 / 그누보드 5.3.2.1 -->
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stat.u-cache.net/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</body>
+</html>
+
+<!-- 사용스킨 : basic -->

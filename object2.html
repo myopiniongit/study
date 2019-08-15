@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grades = {
+            'list' : {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80},
+            'show' : function(){
+                for(var name in this.list) {
+                    document.write(name, this.list[name]);
+                }
+            }
+        }
+        //grades['show']()
+        //document.write(grades['list']['egoing'])
+    //this 란 이 this가 나오게된 함수가 속해있는 객체(변수)를 가리키는 약속된 변수
+    //여기서 this.list 하면 grades.list 가 됨.
+    //console.log(this.list) => {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80}
+    
+  
+    console.log(grades.show())
+    
+    
+    </script>
+</body>
+</html>

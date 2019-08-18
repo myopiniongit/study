@@ -126,3 +126,24 @@ fs.rename(oldfath, newpath, callback)
 or
 
 fs.renameSync(oldpath, newpath)
+
+
+
+
+
+
+
+fs.unlink(path, callback)[src]#
+History
+path <string> | <Buffer> | <URL>
+callback <Function>
+
+err <Error>
+Asynchronously removes a file or symbolic link. No arguments other than a possible exception are given to the completion callback.
+
+// Assuming that 'path/file.txt' is a regular file.
+fs.unlink('path/file.txt', (err) => {
+  if (err) throw err;
+  console.log('path/file.txt was deleted');
+});
+fs.unlink() will not work on a directory, empty or otherwise. To remove a directory, use fs.rmdir().

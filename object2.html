@@ -11,8 +11,8 @@
         var grades = {
             'list' : {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80},
             'show' : function(){
-                for(var name in this.list) {
-                    document.write(name, this.list[name]);
+                for(var name in this.list) { // = for(var name in grades)
+                    document.write(name, this.list[name]); // console.log(name, grades[name])
                 }
             }
         }

@@ -174,6 +174,6 @@ var app = http.createServer(function (request, response) {
 
 });
 app.listen(3000);
-
+console.log("server is running")
 //https://opentutorials.org/module/3549/21032
 
